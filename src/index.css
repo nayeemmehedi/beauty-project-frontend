@@ -94,3 +94,72 @@
 .ant-carousel .slick-dots li.slick-active button {
   background-color: #f472b6; /* Pink-400 */
 }
+
+
+/* ant d pagination color  */
+
+.custom-pagination .ant-pagination-item {
+  border-color: #ff6600; /* Yellow border */
+}
+
+.custom-pagination .ant-pagination-item a {
+  color: #ff6600; /* Yellow number */
+}
+
+.custom-pagination .ant-pagination-item:hover {
+  border-color: #f2df08; /* Yellow border on hover */
+}
+
+.custom-pagination .ant-pagination-item:hover a {
+  color: #f2df08; /* Yellow number on hover */
+}
+
+.custom-pagination .ant-pagination-item-active {
+  border-color: #ff6600; /* Yellow border for active item */
+}
+
+.custom-pagination .ant-pagination-item-active a {
+  color: #ff6600; /* Yellow number for active item */
+}
+
+.custom-pagination .ant-pagination-prev .ant-pagination-item-link,
+.custom-pagination .ant-pagination-next .ant-pagination-item-link {
+  /* border-color: #ff6600;  */
+   /* Yellow border for side icons */
+  color: #ff6600; /* Yellow color for side icons */
+}
+
+.custom-pagination .ant-pagination-prev:hover .ant-pagination-item-link,
+.custom-pagination .ant-pagination-next:hover .ant-pagination-item-link {
+  border-color: #f2df08; /* Yellow border for side icons on hover */
+  color: #f2df08; /* Yellow color for side icons on hover */
+}
+
+.blur-container {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('https://www.banglashoppers.com/media/wysiwyg/banner/abny-home-small.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blur-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* For Safari */
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

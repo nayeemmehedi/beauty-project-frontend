@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-let value = [
-  {
-    name: "Description",
-    link: "/product-details/:id/description",
-  },
-  {
-    name: "Reviews",
-    link: "/product-details/:id/reviews",
-  },
-  {
-    name: "FAQ",
-    link: "/product-details/:id/faq",
-  },
-  {
-    name: "Give Reviews",
-    link: "/product-details/:id/give-review",
-  },
-];
 
-function Review() {
+
+function Review({product}) {
+  let value = [
+    {
+      name: "Description",
+      link: `/product-details/${product.id}/description`,
+    },
+    {
+      name: "Reviews",
+      link: `/product-details/${product.id}/reviews`,
+    },
+    {
+      name: "FAQ",
+      link: `/product-details/${product.id}/faq`,
+    },
+    {
+      name: "Give Reviews",
+      link: `/product-details/${product.id}/give-review`,
+    },
+  ];
   const [valueS, setValueS] = useState("Description");
 
   return (
